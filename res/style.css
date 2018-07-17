@@ -1,0 +1,84 @@
+@font-face {
+  font-family: graphicFont;
+  src: url("PressStart2P.ttf");
+}
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+body .unitList .header {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+body .unitList .statBlock {
+  margin-bottom: 10px;
+}
+body #party {
+  text-align: left;
+}
+body #main {
+  text-align: center;
+}
+body #main #view {
+  font: 24px graphicFont;
+  width: 800px;
+  height: 600px;
+  border: 1px solid red;
+  margin-bottom: 20px;
+  text-align: left;
+  position: relative;
+}
+body #main #view .entity {
+  display: inline-block;
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 0);
+  padding-top: 4px;
+  padding-left: 4px;
+}
+body #main #controls button.hide {
+  display: none;
+}
+body #main #controls #characterCommands {
+  display: none;
+  justify-content: center;
+}
+body #main #controls #characterCommands .characterName {
+  padding-right: 10px;
+}
+body #main #controls #characterCommands .text {
+  padding-right: 10px;
+}
+body #main #controls #characterCommands .buttonGroup.hide {
+  display: none;
+}
+body .statBlock.highlight, body #main #view .entity.highlight,
+body .statBlock.selected, body #main #view .entity.selected {
+  border: 1px solid blue;
+}
+body .statBlock.highlightTarget, body #main #view .entity.highlightTarget,
+body .statBlock.selectedTarget, body #main #view .entity.selectedTarget {
+  border: 1px solid red;
+}
+body #enemies {
+  text-align: right;
+}
+body .statBlock {
+  text-align: left;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+body .statBlock .entityName {
+  font-weight: bold;
+}
+body .statBlock .entityHP {
+  font-weight: bold;
+}
+body .statBlock .entityHP .hpValue {
+  font-weight: normal;
+}
+body .statBlock .entityTarget {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */

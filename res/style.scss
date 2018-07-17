@@ -1,0 +1,93 @@
+@font-face {
+  font-family: graphicFont;
+  src: url("PressStart2P.ttf");
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .unitList .header {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  .unitList .statBlock {
+    margin-bottom: 10px;
+  }
+
+  #party {
+    text-align: left;
+  }
+  #main {
+    text-align: center;
+    #view {
+      font: 24px graphicFont;
+      width:800px;
+      height:600px;
+      border: 1px solid red;
+      margin-bottom:20px;
+      text-align: left;
+      position: relative;
+      .entity {
+        display: inline-block;
+        position: absolute;
+        border: 1px solid rgba(0,0,0,0);
+        padding-top: 4px;
+        padding-left: 4px;
+      }
+    }
+    #controls {
+      button.hide {
+        display: none;
+      }
+      #characterCommands {
+        display: none;
+        justify-content:center;
+        .characterName {
+          padding-right: 10px;
+        }
+        .text {
+          padding-right: 10px;
+        }
+        .buttonGroup.hide {
+          display:none;
+        }
+      }
+    }
+  }
+
+  .statBlock.highlight, #main #view .entity.highlight,
+  .statBlock.selected, #main #view .entity.selected {
+    border: 1px solid blue;
+  }
+  .statBlock.highlightTarget, #main #view .entity.highlightTarget,
+  .statBlock.selectedTarget, #main #view .entity.selectedTarget {
+    border: 1px solid red;
+  }
+
+
+  #enemies {
+    text-align: right;
+  }
+  .statBlock {
+    text-align: left;
+    border: 1px solid rgba(0,0,0,0);
+
+    .entityName {
+      font-weight: bold;
+    }
+    .entityHP {
+      font-weight: bold;
+      .hpValue {
+        font-weight: normal;
+      }
+    }
+    .entityTarget {
+      font-weight: bold;
+    }
+  }
+}

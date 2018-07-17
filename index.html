@@ -1,0 +1,44 @@
+<html>
+<head>
+    <link rel="stylesheet" href="res/style.css">
+    <script src="main.js"></script>
+    <script src="entity.js"></script>
+    <script src="action.js"></script>
+</head>
+
+<body>
+<div id="party" class="unitList">
+    <div class="header">Party</div>
+    <div id="partyList"></div>
+</div>
+<div id="main">
+    <div id="view"></div>
+    <div id="controls">
+        <button id="unpauseButton" onClick="Game.unpause()">Go</button>
+        <button id="pauseButton" class="hide" onclick="Game.pause()">Pause</button>
+        <div id="characterCommands">
+            <div class="characterName"></div>
+            <div class="buttons">
+                <div class="buttonGroup" id="mainCommands">
+                    <button id="targetButton" onclick="Game.startSelectTarget()">Select Target</button>
+                    <button id="moveTo" onclick="Game.startMoveToLocation()">Move To Location</button>
+                    <button class="cancelButton" onclick="Game.cancel()">Cancel</button>
+                </div>
+                <div class="buttonGroup" id="selectTargetCommands">
+                    <span class="text">Select target...</span>
+                    <button class="cancelButton" onclick="Game.cancel()">Cancel</button>
+                </div>
+                <div class="buttonGroup" id="moveToLocationCommands">
+                    <span class="text">Select destination...</span>
+                    <button class="cancelButton" onclick="Game.cancel()">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="enemies" class="unitList">
+    <div class="header">Enemies</div>
+    <div id="enemyList"></div>
+</div>
+</body>
+</html>
